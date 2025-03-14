@@ -50,9 +50,12 @@ function KareninAlani(kenaruzunlugu) {
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
 
-function CemberinCevresi(/* kodlar buraya */) {
+function CemberinCevresi() {
+  const yariCap =5;
+  return 2*pi*yariCap
   /* kodlar buraya */
 }
+console.log(CemberinCevresi())
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -64,7 +67,8 @@ function CemberinCevresi(/* kodlar buraya */) {
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
 
-function CemberinAlani(/* kodlar buraya */) {
+function CemberinAlani(yariCap,pi) {
+  return pi*yariCap*yariCap
   /* kodlar buraya */
 }
 
@@ -98,16 +102,28 @@ let ucetambolunenler,
   tekraredensayilar;
 
 // 3a çözümü
-
-/* kodlar buraya */
+enbuyuk = for(let i of sayilar){
+ if(i>enbuyuk){
+  enbuyuk=i
+ }
+}
+enbuyuk = for(let i of sayilar){
+  if(i<enkuyuk){
+   enkucuk=i
+  }
+}
 
 // 3b çözümü:
+ucetambolunenler = sayilar.forEach(sayi => {
+  if(sayi%3===0){
+    ucetambolunenler.push(sayi)
+  }
+})
 
-/* kodlar buraya */
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((acc,sayi)=>acc+sayi,0)
 
 // 3d çözümü
 
